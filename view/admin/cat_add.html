@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" href="../../css/catadd.css">
+</head>
+
+<style>
+    .lside_tr_1 a{
+        font: 17px/22px '宋体';color:#666666;
+    }
+
+    .lside_tr_1 a:hover{
+        color: #03b6fd;
+    }
+</style>
+<body>
+    <header>
+        <h1>Blog后台管理界面</h1>
+    </header>
+    <div class="main" >
+        <div class="lside" action="../../catinfo.php">
+            <div style="height: 30px"><p style="font: 16px/22px '宋体','楷体';margin-top: 7px;color: #bbbbbb">&nbsp;EDIT CATEGORIES</p></div>
+            <hr style="color: #666666">
+
+            <?php foreach($data as $v){ ?>
+            <div class="lside_tr_1" >
+                <div class = "tr"><p style="color: #666666"><?php echo $v['cat_name']; ?></p></div>
+                <div class = "tr"><p style="color: #666666"><?php echo $v['num']; ?></p></div>
+                <div class = "tr"><a href="../../cat_edit.php?cat_id=<?php echo $v['id']; ?>"><p>编辑</p></a></div>
+                <div class = "tr"><a href="../../cat_del.php?cat_id=<?php echo $v['id']; ?>"><p>删除</p></a></div>
+            </div>
+            <div style="height: 1px"></div>
+            <?php } ?>
+        </div>
+
+        <div class="rside">
+            <div style="height: 30px"><p style="font: 16px/22px '宋体';margin-top: 7px;color: #bbbbbb">&nbsp;ADD CATEGORIES</p></div>
+            <div>
+                <hr>
+                <div style="height: 30px"></div>
+                <form action="../../catadd.php" method="post">
+                    <input type="text" name="biaoti" placeholder="标题" >
+                    <textarea name="neirong" style="display: block" placeholder="我们那儿的风俗，直系亲属去世，百日后才可以剪头。"></textarea>
+                    <input  type="submit" name="tijiao" value="提交" id="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2015 · GeneratePress · WordPress</p>
+    </footer>
+</body>
+</html>

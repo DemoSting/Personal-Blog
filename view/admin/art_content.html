@@ -1,0 +1,92 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/artcontent.css">
+    <title>Title</title>
+</head>
+
+<body style="background-color: #999999">
+<div style="height: 55px"></div>
+<div class="main">
+    <div style="height: 30px"></div>
+    <header>
+        <div style="height: 35px;"></div>
+        <p>Good Life</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.php">Home</a></li>
+            <li><a href="">Comment</a></li>
+            <li><a href="./art_add.php">Write</a></li>
+            <li><a href="../../art_list.php">ArticleList</a></li>
+            <li><a href="../../catadd.php">AddNav</a></li>
+            <li><a href="../../logout.php">Exit</a></li>
+        </ul>
+    </nav>
+    <div style="height: 50px"></div>
+    <div class="articlelist">
+
+        <div class="art_l_all">
+            <div class="art_l">
+                <div class="art_name">
+                    <div style="height: 10px"></div>
+                    <p><?php echo $data['title']?></p>
+                </div>
+                <div class="content">
+                    <div style="height: 20px;"></div>
+                    <div class="img"><img src="../../img/img1.jpg" alt=""></div>
+                    <p><?php echo $data['content']?></p>
+                    <div style="height: 20px;"></div>
+                </div>
+                <div class="pub_date">
+                    <p>By Admin on December 01, 2012 - 01 Commnets</p>
+                </div>
+            </div>
+
+            <div class="comment">
+                <p>Leave a Comment</p>
+                <form action="" method="post">
+                    <input type="text" placeholder=" Email" name="email">
+                    <input type="text" placeholder=" Subject" name = "subject">
+                    <!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
+                    <textarea name="comment" id="" placeholder=" Message"></textarea>
+                    <input type="submit" name="Send" value="Send">
+                </form>
+
+            </div>
+        </div>
+
+
+        <div class="about_us">
+            <div class="about_us_name"><p>About Us</p></div>
+            <div style="height: 20px"></div>
+            <div class="about_us_img"><img src="../../img/img2.jpg" alt=""></div>
+            <div class="about_us_info"><p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum. </p></div>
+        </div>
+
+        <!--可以用来清除浮动-->
+        <br clear="all"/>
+
+    </div>
+
+    <footer>
+        <div class="footer_1"><p>Contact Us</p></div>
+        <div class="footer_2"><p>
+            Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue.<br>
+            Website : sc.chinaz.com<br>
+            +1 (123) 444-5677<br>
+            +1 (123) 444-5678<br>
+            Address: 123 TemplateAccess Rd1</p>
+            <div style="height: 40px"></div>
+        </div>
+    </footer>
+    <div style="height: 40px;"></div>
+</div>
+<div style="height: 40px;"></div>
+</body>
+</html>

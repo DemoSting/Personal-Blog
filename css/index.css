@@ -1,0 +1,451 @@
+
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif}h1,h2,h3,h4,h5,h6{font-size:100%}
+address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp{font-family:courier new,courier,monospace}
+small{font-size:12px}ol,ul{list-style:none}a{text-decoration:none}sup{vertical-align:text-top}sub{vertical-align:text-bottom}
+legend{color:#000}fieldset,img{border:0;display: block;}button,input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}
+
+body{
+    font-family: 'Roboto Slab',sans-serif;
+}
+
+/*######################jquery学习##########################*/
+.search{
+    width: 327px;
+    height: 80px;
+    /*background-color: #CCCCCC;*/
+    margin-left: 724px;
+}
+.ui-search{
+    background: url("./ui-search.jpg") center no-repeat;
+    font-size: 14px;
+    color: #ffffff;
+    position: relative;
+}
+
+.ui-search-selected{
+    width: 70px;
+    height: 39px;
+    line-height: 38px;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #3f3f3f;
+    /*属性规定文本块中首行文本的缩进。*/
+    text-indent: 14px;
+    opacity: 0.5;
+    background-color: #76D2C5;
+    border-radius: 3px 0 0 0;
+}
+
+.ui-search-list{
+    position: absolute;
+    display: none;
+    width: 71px;
+    height: 90px;
+    /*background-color: #CCCCCC;*/
+    left: 0;
+    top:36px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+    background-color: white;
+    /*属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。*/
+    /*Z-index 可用于将在一个元素放置于另一元素之后。*/
+}
+
+.ui-search-list a{
+    display: block;
+    height: 30px;
+    text-align: center;
+    color: black;
+    font: 15px/30px 'David';
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.ui-search-list a:hover{
+    color: #76D2C5;
+    background-color: #f0ead8;
+}
+
+.ui-search-input{
+    width: 200px;
+    height: 38px;
+    position: absolute;
+    /*top:5px;*/
+    left: 70px;
+    line-height: 26px;
+    font-size: 13px;
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+}
+
+.ui-search-submit{
+    display: block;
+    position: absolute;
+    font-size: 15px;
+    line-height: 38px;
+    text-align: center;
+    right: 0;
+    width: 56px;
+    height: 39px;
+    opacity: 0.5;
+    border-radius: 0 3px 0 0;
+    background-color: #76D2C5;
+}
+
+
+.back_to_top{
+    display: block;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    color: red;
+    z-index: 9;
+}
+
+.back_to_top:hover:after{
+    content: '回到顶部';
+    line-height: 20px;
+    text-align: center;
+}
+
+/*######################jquery学习##########################*/
+
+.main{
+    width: 1100px;
+    min-height: 500px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.main header {
+    width: 1000px;
+    height: 160px;
+    background-color: #76D2C5;
+    margin: 0 auto 0 auto;
+}
+
+.main header p{
+    font-size: 60px;
+    line-height: 80px;
+    color: #ffffff;
+    text-align: center;
+    font-family: David;
+    /*font-weight: 200;*/
+}
+
+.main nav{
+    width: 1000px;
+    height: 50px;
+    background-color: #91DBD1;
+    margin: 0 auto;
+}
+
+.main nav ul li {
+    float: left;
+    width: 120px;
+}
+
+.main nav ul li a {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    height: 50px;
+    margin:0 10px;
+    text-align: center;
+}
+
+.main nav ul li:hover{
+    background-color: white;
+}
+
+.main nav ul li a:hover{
+    color: black;
+}
+
+.articlelist{
+    width: 960px;
+    overflow: hidden;
+    /*min-height: 500px;*/
+    /*background: lightyellow;*/
+    /*border: 1px solid #bfbfbf;*/
+    margin: 0 auto;
+    clear: both;
+    font-family: David;
+}
+
+.art_l_all{
+    width: 610px;
+    /*height: 400px;*/
+    /*background: #03b6fd;*/
+    float: left;
+    /*border: 1px solid #bfbfbf;*/
+
+}
+
+.art_l{
+    width: 610px;
+    /*height: 400px;*/
+    /*background: #03b6fd;*/
+    /*float: left;*/
+    margin-bottom:40px ;
+    border: 1px solid #bfbfbf;
+}
+
+.art_name{
+    width: 560px;
+    height: 100px;
+    /*background: #03b6fd;*/
+    margin: 0 auto;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.art_name a{
+    color: gray;
+}
+
+.art_name a:hover{
+    color: #76D2C5;
+}
+
+.art_name p{
+    font-size: 28px;
+    text-align: center;
+    color: gray;
+    font-weight: lighter ;
+}
+
+.content{
+    width: 560px;
+    /*background: #03b6fd;*/
+    margin: 0 auto;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.content p {
+    font-size: 20px;
+    color: gray;
+    font-weight: normal;
+}
+
+.content p a{
+    color: #bbbbbb;
+}
+
+.content p a:hover{
+    color: #76D2C5;
+}
+
+.img {
+    width: 330px;
+}
+
+.img img{
+    width: 300px;
+    float: left;
+    margin: 0 20px 5px 0;
+    padding: 3px;
+    border: 1px solid #bfbfbf;
+}
+
+.pub_date{
+    width: 560px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.pub_date p{
+    font-size: 28px;
+    color: gray;
+    font-weight: normal;
+}
+
+/*########################about_us##########################*/
+
+.about_us{
+    width: 310px;
+    /*height: 350px;*/
+    float: right;
+    border: 1px solid #bfbfbf;
+    margin-bottom: 40px;
+    color: gray;
+}
+
+.about_us_name{
+    width: 100%;
+    height: 50px;
+    font-size: 32px;
+    line-height: 60px;
+
+}
+
+.about_us_name p{
+    text-align: center;
+}
+
+.about_us_img{
+    float: left;
+
+}
+
+.about_us_img img{
+    width: 160px;
+    margin: 10px 20px 10px 20px;
+    padding: 3px;
+    border:1px solid #bbbbbb;
+    /*border-radius: 10px;*/
+}
+
+.about_us_info p {
+    margin: 0 20px 10px 20px;
+    color: gray;
+}
+
+.art_type{
+    margin: 0 20px 10px 20px;
+    /*background-color: gray;*/
+    /*height: 200px;*/
+}
+
+.art_type_one{
+    width: 80%;
+    margin: 5px auto;
+    /*background-color: red;*/
+    height: 30px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.art_type_one p{
+    margin-left: 10px;
+    /*background-color: black;*/
+    font: 17px/30px 'David';
+}
+
+.art_type_one:last-child{
+    margin-bottom: 20px;
+}
+
+/*#####################footer#########################*/
+
+footer{
+    margin: 100px auto 0;
+    width: 1000px;
+    height: 350px;
+    background-color: #91DBD1;
+}
+
+.footer_1{
+    width: 600px;
+    height: 60px;
+    float: left;
+    /*background-color: black;*/
+    margin-top: 20px;
+    /*margin: 20px 10px;*/
+    border-bottom: 1px solid whitesmoke;
+    margin-left: 200px;
+}
+
+.footer_1 p{
+    /*margin-top:20px ;*/
+    margin-left: 10px;
+    text-align: center;
+    font: 30px/30px '黑体','Roboto Slab','sans-serif';
+    line-height: 60px;
+    color: white;
+    /*font-weight: 500;*/
+}
+
+.footer_1 p:hover{
+    color: #03b6fd;
+}
+
+.footer_2{
+    width: 600px;
+    /*height: 260px;*/
+    float: left;
+    margin-top: 20px;
+    margin-left: 200px;
+    font: 20px/28px 'Roboto Slab','sans-serif';
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.footer_2 p{
+    text-align: center;
+}
+
+.footer_2 p:hover{
+    color: #03b6fd;
+}
+
+/*###########################login##########################*/
+
+.login{
+    width: 700px;
+    height: 500px;
+    border: 1px solid #CCCCCC;
+    /*background-color: black;*/
+    margin:0 auto;
+}
+
+.login p{
+    display: block;
+    width: 400px;
+    height: 40px;
+    margin: 80px auto 20px auto;
+    font: 25px/40px 'David';
+    text-align: left;
+    /*background-color: black;*/
+}
+
+.login input{
+    display: block;
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 10px auto;
+    font: 20px/50px 'David';
+    background-color: white;
+}
+
+
+/*.login input:first-child{*/
+    /*margin-top: 120px;*/
+/*}*/
+
+#submit{
+    display: block;
+    width: 400px;
+    height: 50px;
+    margin: 0px auto;
+    border: none;
+    background-color: white;
+    font: 20px/50px 'David';
+    text-align: left;
+    color: gray;
+
+}
+
+#submit:hover{
+    color: #76D2C5;
+}
+
+#last_input{
+    display: block;
+    width: 400px;
+    height: 50px;
+    margin: 0px auto;
+    text-align: right;
+    /*background-color: black;*/
+    border: none;
+    color: gray;
+    font: 20px/50px 'David';
+}
+
+#last_input:hover{
+    color: #76D2C5;
+}
+

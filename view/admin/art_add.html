@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/artadd.css">
+    <title>Title</title>
+</head>
+
+<body style="background-color: #999999">
+    <div style="height: 55px"></div>
+    <div class="main">
+        <div style="height: 30px"></div>
+        <header>
+            <div style="height: 35px;"></div>
+            <p>Good Life</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../../index.php">Home</a></li>
+                <li><a href="">Comment</a></li>
+                <li><a href="./art_add.php">Write</a></li>
+                <li><a href="../../art_list.php">ArticleList</a></li>
+                <li><a href="../../catadd.php">AddNav</a></li>
+                <li><a href="../../logout.php">Exit</a></li>
+            </ul>
+        </nav>
+        <div style="height: 50px"></div>
+        <form class="addart" action="../../art_add.php" method = "post">
+            <div class="art_name">
+                <textarea name="title" id="a_name" placeholder="请输入文章名称"></textarea>
+            </div>
+
+            <div class="art_contnt">
+                <textarea name="content" id="a_content" placeholder="请输入文章内容"></textarea>
+            </div>
+            <select name="type" id="tag_select">
+                <?php foreach($data as $v){ ?>
+                    <option><?php echo $v['cat_name']?></option>
+                <?php } ?>
+            </select>
+            <input type="submit" id = "sub_mit" name = "提交" value="Submit"></input>
+        </form>
+    </div>
+</body>
+</html>
